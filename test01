@@ -1,5 +1,5 @@
 // --- 常數設定 ---
-git commit -m "MCTT-14 撰寫積分系統 API 文件"
+
 
 const MAX_EXECUTION_TIME_MS = 5 * 60 * 1000; // 設定 5 分鐘，保留 1 分鐘緩衝
 const TICKETS_PER_PAGE = 100; // 根據您的 API 限制調整，一次處理 100 張
@@ -9,7 +9,7 @@ const SUBDOMAIN = SCRIPT_PROPERTIES.getProperty('FRESHDESK_SUBDOMAIN'); // 假�
 
 /**
  * 1. 啟動函式 (Main Trigger Function)
- * 請手動建立一個「每日」的時間觸發器來執行此函式。
+ * 請手動建立一個「每日」的時間觸發器來執行此函式。...
  */
 function startBatchUpdate() {
   // 清理舊的觸發器，防止重複執行
